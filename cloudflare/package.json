@@ -1,9 +1,9 @@
 {
   "name": "cloudflare",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "dev": "vite",
-    "build": "./node_modules/typescript/bin/tsc && vite build",
+    "build": "npx tsc && vite build",
     "serve": "vite preview"
   },
   "dependencies": {
