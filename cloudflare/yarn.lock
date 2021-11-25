@@ -680,6 +680,11 @@ to-fast-properties@^2.0.0:
   resolved "http://r.npm.sankuai.com/to-fast-properties/download/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
   integrity sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
 
+tsc@^2.0.3:
+  version "2.0.3"
+  resolved "http://r.npm.sankuai.com/tsc/download/tsc-2.0.3.tgz#037fe579e3bd67a5cbdaa604b43c6c1991b04bef"
+  integrity sha1-A3/leeO9Z6XL2qYEtDxsGZGwS+8=
+
 typescript@^4.3.2:
   version "4.5.2"
   resolved "http://r.npm.sankuai.com/typescript/download/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
