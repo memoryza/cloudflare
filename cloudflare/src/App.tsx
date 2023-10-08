@@ -78,7 +78,7 @@ ACDDD
 
 function App() {
   const [text, setText] = useState('')
-  const [platform, setPlatform] = useState()
+  const [platform, setPlatform] = useState('0')
   const [loading, setLoading] = useState(false)
   const fetchAPI = useCallback(async () => {
     setTimeout(() => {
@@ -114,7 +114,11 @@ function App() {
      <Selector
           options={options}
           defaultValue={['1']}
-          onChange={(arr, extend) => setPlatform(arr[0])}
+          onChange={(arr, extend) => {
+            if (Array.isArray(arr)) {
+              setPlatform(arr[0])
+            }
+            }}
         />
 
         <Button block  onClick={() => setText(exampleText)}>
