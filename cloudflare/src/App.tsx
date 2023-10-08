@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { Button, Selector, TextArea } from 'antd-mobile'
+// import { Button, Selector, TextArea } from 'antd-mobile'
 import './App.css'
 
 
@@ -77,33 +77,37 @@ ACDDD
 要求批改严格参照标准答案、实事求是，不能随意捏造分数。`
 
 function App() {
-  const [text, setText] = useState('')
-  const [platform, setPlatform] = useState()
-  const [loading, setLoading] = useState(false)
-  const fetchAPI = useCallback(async () => {
-    const fetchData = await fetch('https://blog.aililuo.com/api/getminimaxai', {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, *cors, same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "same-origin", // include, *same-origin, omit
-      headers: {
-        "Content-Type": "application/json",
-        // 'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      redirect: "follow", // manual, *follow, error
-      referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-      body: JSON.stringify({content: text})
-    });
-    console.log(await fetchData.json())
-  }, [text])
+  // const [text, setText] = useState('')
+  // const [platform, setPlatform] = useState()
+  // const [loading, setLoading] = useState(false)
+  // const fetchAPI = useCallback(async () => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 10000);
+  //   const fetchData = await fetch('https://blog.aililuo.com/api/getminimaxai', {
+  //     method: "POST", // *GET, POST, PUT, DELETE, etc.
+  //     mode: "cors", // no-cors, *cors, same-origin
+  //     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+  //     credentials: "same-origin", // include, *same-origin, omit
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       // 'Content-Type': 'application/x-www-form-urlencoded',
+  //     },
+  //     redirect: "follow", // manual, *follow, error
+  //     referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+  //     body: JSON.stringify({content: text})
+  //   });
+  
+  //   console.log(await fetchData.json())
+  // }, [text])
 
   return (
     <div className="App">
-     <TextArea
+  {/*   <TextArea
       value={text}
       onChange={val => {
         setText(val)
-      }}
+      }} 
       placeholder='请输入内容'
       showCount
       autoSize={{ minRows: 3, maxRows: 5 }}
@@ -123,6 +127,8 @@ function App() {
         }}>
           提交生成结果
         </Button>
+        */}
+        <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=529184191&website=www.oicqzone.com">联系我</a>
     </div>
   )
 }
